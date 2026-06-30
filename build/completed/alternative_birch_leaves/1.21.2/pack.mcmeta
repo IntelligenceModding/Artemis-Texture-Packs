@@ -1,0 +1,10 @@
+﻿{
+    "pack":  {
+                 "description":  "Alternative Birch Leaves for Minecraft 1.21.2",
+                 "pack_format":  42,
+                 "supported_formats":  {
+                                           "min_inclusive":  42,
+                                           "max_inclusive":  42
+                                       }
+             }
+}

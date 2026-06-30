@@ -1,0 +1,19 @@
+﻿{
+    "pack":  {
+                 "description":  "Alternative Birch Leaves for Minecraft 1.21.11",
+                 "pack_format":  {
+                                     "major":  75,
+                                     "minor":  0
+                                 },
+                 "supported_formats":  {
+                                           "min_inclusive":  {
+                                                                 "major":  75,
+                                                                 "minor":  0
+                                                             },
+                                           "max_inclusive":  {
+                                                                 "major":  75,
+                                                                 "minor":  0
+                                                             }
+                                       }
+             }
+}

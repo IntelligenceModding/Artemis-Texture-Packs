@@ -1,0 +1,43 @@
+name: Build Texture Packs
+
+on:
+  push:
+    paths:
+      - 'resource_packs/**'
+      - 'config/**'
+      - 'scripts/**'
+      - '.github/workflows/build-packs.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build packs
+        shell: pwsh
+        run: .\scripts\build-texture-packs.ps1 -Clean
+
+      - name: Upload completed packs
+        uses: actions/upload-artifact@v4
+        with:
+          name: completed-packs
+          path: build/completed
+          if-no-files-found: error
+
+      - name: Upload zip packs
+        uses: actions/upload-artifact@v4
+        with:
+          name: zipped-packs
+          path: build/zips
+          if-no-files-found: error
+
+      - name: Upload build reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-reports
+          path: build/reports
+          if-no-files-found: error

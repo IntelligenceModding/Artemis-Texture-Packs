@@ -1,0 +1,39 @@
+﻿{
+    "packName":  "alternative_birch_leaves",
+    "versionId":  "1.20.4",
+    "status":  "success",
+    "outputFolder":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\completed\\alternative_birch_leaves\\1.20.4",
+    "zipPath":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\zips\\alternative_birch_leaves\\alternative_birch_leaves-1.20.4.zip",
+    "warnings":  [
+
+                 ],
+    "resolvedInputs":  [
+                           {
+                               "source":  "drop/models/block/birch_leaves.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/birch_leaves.json"
+                           },
+                           {
+                               "source":  "drop/textures/block/birch_leaves.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/block/birch_leaves.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/birch_sapling.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/block/birch_sapling.png"
+                           },
+                           {
+                               "source":  "pack.png",
+                               "kind":  "root",
+                               "output":  "pack.png"
+                           }
+                       ],
+    "files":  [
+                  "assets/minecraft/models/block/birch_leaves.json",
+                  "assets/minecraft/textures/block/birch_leaves.png",
+                  "assets/minecraft/textures/block/birch_sapling.png",
+                  "pack.mcmeta",
+                  "pack.png"
+              ]
+}
