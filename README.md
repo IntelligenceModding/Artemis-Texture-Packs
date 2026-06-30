@@ -61,6 +61,7 @@ Example:
 ```text
 resource_packs/alternative_birch_leaves/drop/textures/block/birch_leaves.png
 resource_packs/alternative_birch_leaves/drop/textures/item/stone_pickaxe.png
+resource_packs/alternative_birch_leaves/drop/textures/particle/flame.png
 resource_packs/alternative_birch_leaves/drop/models/block/birch_leaves.json
 resource_packs/alternative_birch_leaves/drop/models/item/stone_pickaxe.json
 resource_packs/alternative_birch_leaves/drop/blockstates/birch_leaves.json
@@ -83,6 +84,7 @@ Recommended subfolders where the asset class splits by purpose:
 
 - `drop/textures/block/`
 - `drop/textures/item/`
+- `drop/textures/particle/`
 - `drop/models/block/`
 - `drop/models/item/`
 
@@ -178,13 +180,13 @@ That file currently covers every official release version after `1.12.2`, from `
 
 ## `pack.mcmeta` compatibility handling
 
-The builder supports Mojang's current pack metadata breakpoints:
+The builder supports Mojang's current resource-pack metadata breakpoints:
 
 - up to `1.20.1`: `pack_format` only
 - `1.20.2` through `1.21.8`: integer `pack_format` plus optional `supported_formats`
-- `1.21.9` and newer: `pack_format` as `major`/`minor`, plus optional `supported_formats`
+- `1.21.9` and newer: `min_format` / `max_format` using Mojang's newer pack-format model
 
-The default config emits exact-match compatibility ranges for versions that support `supported_formats`, so the generated pack metadata stays aligned with the target version unless you widen the range yourself.
+For `1.21.9+`, the generated metadata no longer writes `pack_format` or `supported_formats`. It emits `min_format` and `max_format` directly so packs show up as compatible in the resource-pack selection UI.
 
 ## Local build
 
@@ -215,6 +217,7 @@ It creates:
 - `assets/minecraft/`
 - `drop/textures/block/`
 - `drop/textures/item/`
+- `drop/textures/particle/`
 - `drop/models/block/`
 - `drop/models/item/`
 - the other typed `drop/` folders

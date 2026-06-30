@@ -1,0 +1,5 @@
+﻿{
+    "drop/textures/block/nether_portal.png.mcmeta":  "assets/minecraft/textures/block/nether_portal.png.mcmeta",
+    "drop/textures/block/nether_portal.png":  "assets/minecraft/textures/block/nether_portal.png",
+    "drop/particles/portal.json":  "assets/minecraft/particles/portal.json"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "pack":  {
+                 "description":  "Alternative Nether Portal Color for Minecraft 1.21.3",
+                 "pack_format":  42,
+                 "supported_formats":  {
+                                           "min_inclusive":  42,
+                                           "max_inclusive":  42
+                                       }
+             }
+}

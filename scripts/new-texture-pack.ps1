@@ -50,6 +50,7 @@ $directories = @(
     'drop/textures'
     'drop/textures/block'
     'drop/textures/item'
+    'drop/textures/particle'
     'drop/models'
     'drop/models/block'
     'drop/models/item'
@@ -77,5 +78,5 @@ Set-Content -LiteralPath (Join-Path -Path $targetRoot -ChildPath 'pack.build.psd
 
 Write-Output "Created resource pack scaffold: $targetRoot"
 Write-Output "Add your icon as: resource_packs/$packName/pack.png"
-Write-Output "Add textures under: resource_packs/$packName/drop/textures/block or .../item"
+Write-Output "Add textures under: resource_packs/$packName/drop/textures/block or .../item or .../particle"
 Write-Output "Add models under: resource_packs/$packName/drop/models/block or .../item"

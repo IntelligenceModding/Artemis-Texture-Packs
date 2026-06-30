@@ -1,0 +1,87 @@
+﻿{
+    "packName":  "alternative_nether_portal_color",
+    "versionId":  "1.14.4",
+    "status":  "success",
+    "outputFolder":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\completed\\alternative_nether_portal_color\\1.14.4",
+    "zipPath":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\zips\\alternative_nether_portal_color\\alternative_nether_portal_color-1.14.4.zip",
+    "warnings":  [
+
+                 ],
+    "resolvedInputs":  [
+                           {
+                               "source":  "drop/particles/portal.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/particles/portal.json"
+                           },
+                           {
+                               "source":  "drop/textures/block/nether_portal.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/block/nether_portal.png"
+                           },
+                           {
+                               "source":  "drop/textures/block/nether_portal.png.mcmeta",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/block/nether_portal.png.mcmeta"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_0.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_0.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_1.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_1.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_2.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_2.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_3.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_3.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_4.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_4.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_5.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_5.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_6.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_6.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/particle/nether_portal_7.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/particle/nether_portal_7.png"
+                           },
+                           {
+                               "source":  "pack.png",
+                               "kind":  "root",
+                               "output":  "pack.png"
+                           }
+                       ],
+    "files":  [
+                  "assets/minecraft/particles/portal.json",
+                  "assets/minecraft/textures/block/nether_portal.png",
+                  "assets/minecraft/textures/block/nether_portal.png.mcmeta",
+                  "assets/minecraft/textures/particle/nether_portal_0.png",
+                  "assets/minecraft/textures/particle/nether_portal_1.png",
+                  "assets/minecraft/textures/particle/nether_portal_2.png",
+                  "assets/minecraft/textures/particle/nether_portal_3.png",
+                  "assets/minecraft/textures/particle/nether_portal_4.png",
+                  "assets/minecraft/textures/particle/nether_portal_5.png",
+                  "assets/minecraft/textures/particle/nether_portal_6.png",
+                  "assets/minecraft/textures/particle/nether_portal_7.png",
+                  "pack.mcmeta",
+                  "pack.png"
+              ]
+}

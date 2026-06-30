@@ -204,6 +204,24 @@ function Format-PackFormatValue {
     return "$($normalized.major).$($normalized.minor)"
 }
 
+function Convert-PackFormatMetadataValue {
+    param([Parameter(Mandatory = $true)]$Value)
+
+    $normalized = Convert-PackFormatValue -Value $Value
+    if ($normalized -is [int]) {
+        return $normalized
+    }
+
+    if ([int]$normalized.minor -eq 0) {
+        return [int]$normalized.major
+    }
+
+    return @(
+        [int]$normalized.major
+        [int]$normalized.minor
+    )
+}
+
 function New-ExactSupportedFormatsRange {
     param([Parameter(Mandatory = $true)]$PackFormat)
 
@@ -457,13 +475,21 @@ function New-PackMcmetaObject {
         Convert-Tokens -Value ([string]$Tokens.BaseDescription) -Tokens $Tokens
     }
 
+    $normalizedPackFormat = Convert-PackFormatValue -Value $VersionConfig.PackFormat
     $packNode = [ordered]@{
-        pack_format = Convert-PackFormatValue -Value $VersionConfig.PackFormat
         description = $description
     }
 
+    if ($normalizedPackFormat -is [int]) {
+        $packNode.pack_format = $normalizedPackFormat
+    }
+    else {
+        $packNode.min_format = Convert-PackFormatMetadataValue -Value $normalizedPackFormat
+        $packNode.max_format = Convert-PackFormatMetadataValue -Value $normalizedPackFormat
+    }
+
     $supportedFormats = Get-EffectiveSupportedFormats -VersionConfig $VersionConfig
-    if ($null -ne $supportedFormats) {
+    if ($null -ne $supportedFormats -and $normalizedPackFormat -is [int]) {
         $packNode.supported_formats = $supportedFormats
     }
 
