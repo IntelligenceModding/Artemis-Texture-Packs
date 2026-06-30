@@ -1,0 +1,10 @@
+﻿{
+    "drop/textures/block/budding_amethyst.png":  "assets/minecraft/textures/block/budding_amethyst.png",
+    "drop/textures/block/amethyst_cluster.png":  "assets/minecraft/textures/block/amethyst_cluster.png",
+    "drop/textures/item/amethyst_shard.png":  "assets/minecraft/textures/item/amethyst_shard.png",
+    "drop/textures/block/medium_amethyst_bud.png":  "assets/minecraft/textures/block/medium_amethyst_bud.png",
+    "drop/textures/block/large_amethyst_bud.png":  "assets/minecraft/textures/block/large_amethyst_bud.png",
+    "drop/textures/block/small_amethyst_bud.png":  "assets/minecraft/textures/block/small_amethyst_bud.png",
+    "drop/textures/block/amethyst_block.png":  "assets/minecraft/textures/block/amethyst_block.png",
+    "drop/lang/en_us.json":  "assets/minecraft/lang/en_us.json"
+}
