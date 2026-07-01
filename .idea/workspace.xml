@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_mud_color">
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/blockstates/oak_leaves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/models/block/flowering_leaves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/models/block/flowering_oak_leaves_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/models/block/flowering_oak_leaves_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/models/block/flowering_oak_leaves_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/models/item/oak_leaves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/textures/block/oak_flowers_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/textures/block/oak_flowers_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/assets/minecraft/textures/block/oak_flowers_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/flowering_oak_leaves/pack.png" afterDir="false" />
+    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added flowering_oak_leaves">
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/drop/models/block/end_rod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/drop/textures/block/end_rod.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/pack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="assets" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,7 +62,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/alternative_mud_color",
+    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/alternative_end_rod",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,18 +73,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\alternative_end_rod" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\alternative_mud_color" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\swords_to_lightsabers\drop\textures\item" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\swords_to_lightsabers" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\textures\block" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\blockstates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\flowering_oak_leaves" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\blockstates" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\models\item" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\models\block" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\textures\block" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.Build Selected Texture Packs">
@@ -191,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1782916816542</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added flowering_oak_leaves">
+      <option name="closed" value="true" />
+      <created>1782919442811</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919442811</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added flowering_oak_leaves">
+      <option name="closed" value="true" />
+      <created>1782919514405</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919514405</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +218,7 @@
     <MESSAGE value="Added flowering_lily_pads" />
     <MESSAGE value="Added swords_to_lightsabers" />
     <MESSAGE value="Added alternative_mud_color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added alternative_mud_color" />
+    <MESSAGE value="Added flowering_oak_leaves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flowering_oak_leaves" />
   </component>
 </project>
