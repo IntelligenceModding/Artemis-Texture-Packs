@@ -419,6 +419,24 @@ function Test-VersionSelectorMatch {
     return $true
 }
 
+function New-InputFileWithReplacedSource {
+    param(
+        [Parameter(Mandatory = $true)]$InputFile,
+        [Parameter(Mandatory = $true)][string]$NewSourcePath,
+        [Parameter(Mandatory = $true)][string]$PackRoot
+    )
+
+    $copy = [ordered]@{}
+    foreach ($property in $InputFile.PSObject.Properties) {
+        $copy[$property.Name] = $property.Value
+    }
+
+    $copy['SourcePath'] = $NewSourcePath
+    $copy['SourceRelativePath'] = Get-NormalizedRelativePath -BasePath $PackRoot -FullPath $NewSourcePath
+
+    return [pscustomobject]$copy
+}
+
 function Get-PackSelectedVersions {
     param(
         [Parameter(Mandatory = $true)]$PackDirectory,
@@ -799,6 +817,10 @@ function Get-PackInputFiles {
     if ($packOptions.ContainsKey('FileRules') -and $packOptions.FileRules) {
         $fileRules = @($packOptions.FileRules)
     }
+    $fileVariants = @()
+    if ($packOptions.ContainsKey('FileVariants') -and $packOptions.FileVariants) {
+        $fileVariants = @($packOptions.FileVariants)
+    }
     $versionOrder = Get-VersionOrderLookup -Config $Config
 
     $inputFiles = New-Object System.Collections.Generic.List[object]
@@ -910,14 +932,73 @@ function Get-PackInputFiles {
         }
     }
 
-    if ($fileRules.Count -eq 0) {
-        return @($inputFiles | Sort-Object Priority, SourcePath)
-    }
-
     $contextPrefix = "Pack '$($PackDirectory.Name)' inside $([string]$Config.PackBuildConfigFile)"
     $selectedInputFiles = New-Object System.Collections.Generic.List[object]
 
     foreach ($inputFile in @($inputFiles | Sort-Object Priority, SourcePath)) {
+        $selectedInputFile = $inputFile
+
+        if ($fileVariants.Count -gt 0) {
+            $matchingVariants = New-Object System.Collections.Generic.List[hashtable]
+
+            foreach ($rawVariant in $fileVariants) {
+                if ($null -eq $rawVariant) {
+                    continue
+                }
+
+                $variant = ConvertTo-Hashtable -InputObject $rawVariant
+                $variantPath = [string](Get-HashtableValueOrDefault -Table $variant -Key 'Path' -DefaultValue '')
+                $variantSourcePath = [string](Get-HashtableValueOrDefault -Table $variant -Key 'SourcePath' -DefaultValue '')
+                if ([string]::IsNullOrWhiteSpace($variantPath)) {
+                    throw "$contextPrefix has a FileVariants entry without a non-empty 'Path'."
+                }
+
+                if ([string]::IsNullOrWhiteSpace($variantSourcePath)) {
+                    throw "$contextPrefix FileVariants Path '$variantPath' is missing a non-empty 'SourcePath'."
+                }
+
+                $isPathMatch = $false
+                foreach ($candidatePath in @($inputFile.RulePaths)) {
+                    if (Test-RuleMatch -Path ([string]$candidatePath) -Rule $variantPath) {
+                        $isPathMatch = $true
+                        break
+                    }
+                }
+
+                if (-not $isPathMatch) {
+                    continue
+                }
+
+                $contextDescription = "$contextPrefix FileVariants Path '$variantPath'"
+                if (Test-VersionSelectorMatch -Options $variant -VersionConfig $VersionConfig -VersionOrder $versionOrder -ContextDescription $contextDescription) {
+                    $matchingVariants.Add($variant)
+                }
+            }
+
+            if ($matchingVariants.Count -gt 1) {
+                $matchingVariantDescriptions = @($matchingVariants | ForEach-Object {
+                    "$([string]$_.Path) -> $([string]$_.SourcePath)"
+                })
+
+                throw "$contextPrefix matches multiple FileVariants for '$($inputFile.SourceRelativePath)' in version '$([string]$VersionConfig.Id)': $($matchingVariantDescriptions -join ', ')"
+            }
+
+            if ($matchingVariants.Count -eq 1) {
+                $variant = $matchingVariants[0]
+                $variantSourceFullPath = Resolve-FullPath -BasePath $packRoot -Path ([string]$variant.SourcePath)
+                if (-not (Test-Path -LiteralPath $variantSourceFullPath -PathType Leaf)) {
+                    throw "$contextPrefix FileVariants Path '$([string]$variant.Path)' points to missing SourcePath '$([string]$variant.SourcePath)'."
+                }
+
+                $selectedInputFile = New-InputFileWithReplacedSource -InputFile $inputFile -NewSourcePath $variantSourceFullPath -PackRoot $packRoot
+            }
+        }
+
+        if ($fileRules.Count -eq 0) {
+            $selectedInputFiles.Add($selectedInputFile)
+            continue
+        }
+
         $matchingRules = New-Object System.Collections.Generic.List[hashtable]
 
         foreach ($rawRule in $fileRules) {
@@ -931,7 +1012,7 @@ function Get-PackInputFiles {
                 throw "$contextPrefix has a FileRules entry without a non-empty 'Path'."
             }
 
-            foreach ($candidatePath in @($inputFile.RulePaths)) {
+            foreach ($candidatePath in @($selectedInputFile.RulePaths)) {
                 if (Test-RuleMatch -Path ([string]$candidatePath) -Rule $rulePath) {
                     $matchingRules.Add($rule)
                     break
@@ -940,7 +1021,7 @@ function Get-PackInputFiles {
         }
 
         if ($matchingRules.Count -eq 0) {
-            $selectedInputFiles.Add($inputFile)
+            $selectedInputFiles.Add($selectedInputFile)
             continue
         }
 
@@ -955,7 +1036,7 @@ function Get-PackInputFiles {
         }
 
         if ($includeForVersion) {
-            $selectedInputFiles.Add($inputFile)
+            $selectedInputFiles.Add($selectedInputFile)
         }
     }
 

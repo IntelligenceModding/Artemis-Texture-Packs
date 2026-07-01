@@ -1,0 +1,6 @@
+﻿{
+    "drop/textures/item/copper_nugget.png":  "assets/minecraft/textures/item/copper_nugget.png",
+    "drop/textures/item/gold_nugget.png":  "assets/minecraft/textures/item/gold_nugget.png",
+    "drop/textures/item/iron_nugget.png":  "assets/minecraft/textures/item/iron_nugget.png",
+    "variants/1.21.9/drop/lang/en_us.json":  "assets/minecraft/lang/en_us.json"
+}

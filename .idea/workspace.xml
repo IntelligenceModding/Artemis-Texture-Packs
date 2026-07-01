@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added flowering_oak_leaves">
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/drop/models/block/end_rod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/drop/textures/block/end_rod.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_end_rod/pack.png" afterDir="false" />
+    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_end_rod">
+      <change afterPath="$PROJECT_DIR$/resource_packs/nuggets_to_coins/drop/lang/en_us.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/nuggets_to_coins/drop/textures/item/gold_nugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/nuggets_to_coins/drop/textures/item/iron_nugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/nuggets_to_coins/pack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="assets" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,11 +82,11 @@
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\textures\block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\nuggets_to_coins\drop\lang" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\nuggets_to_coins\drop\textures\item" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\nuggets_to_coins" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\flowering_oak_leaves" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\blockstates" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\models\item" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\models\block" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\textures\block" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.Build Selected Texture Packs">
@@ -200,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782919514405</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added alternative_end_rod">
+      <option name="closed" value="true" />
+      <created>1782924364098</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1782924364098</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,7 @@
     <MESSAGE value="Added swords_to_lightsabers" />
     <MESSAGE value="Added alternative_mud_color" />
     <MESSAGE value="Added flowering_oak_leaves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added flowering_oak_leaves" />
+    <MESSAGE value="Added alternative_end_rod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alternative_end_rod" />
   </component>
 </project>
