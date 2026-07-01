@@ -1,0 +1,19 @@
+{
+  "variants":
+  {
+    "persistent=false":
+      [
+      {"model": "minecraft:block/oak_leaves","weight":90},
+      {"model": "minecraft:block/flowering_oak_leaves_1","weight":4},
+      {"model": "minecraft:block/flowering_oak_leaves_2","weight":3},
+      {"model": "minecraft:block/flowering_oak_leaves_3","weight":3}
+      ],
+    "persistent=true":
+      [
+      {"model": "minecraft:block/oak_leaves","weight":40},
+      {"model": "minecraft:block/flowering_oak_leaves_1","weight":4},
+      {"model": "minecraft:block/flowering_oak_leaves_2","weight":3},
+      {"model": "minecraft:block/flowering_oak_leaves_3","weight":3}
+      ]
+  }
+}

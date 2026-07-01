@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flowering_leaves",
+  "textures": {
+    "leaves": "minecraft:block/oak_leaves",
+    "flowers": "minecraft:block/oak_flowers_2"
+  }
+}
