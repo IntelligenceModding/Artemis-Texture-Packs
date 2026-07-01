@@ -868,7 +868,9 @@ function Assert-ValidJsonFile {
     param([Parameter(Mandatory = $true)][string]$Path)
 
     $raw = Get-Content -LiteralPath $Path -Raw -Encoding UTF8
-    $null = $raw | ConvertFrom-Json
+    Add-Type -AssemblyName System.Web.Extensions
+    $serializer = New-Object System.Web.Script.Serialization.JavaScriptSerializer
+    $null = $serializer.DeserializeObject($raw)
 }
 
 function New-ZipFromDirectory {

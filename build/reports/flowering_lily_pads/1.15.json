@@ -1,0 +1,69 @@
+﻿{
+    "packName":  "flowering_lily_pads",
+    "versionId":  "1.15",
+    "status":  "success",
+    "outputFolder":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\completed\\flowering_lily_pads\\1.15",
+    "zipPath":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\zips\\flowering_lily_pads\\flowering_lily_pads-1.15.zip",
+    "warnings":  [
+
+                 ],
+    "resolvedInputs":  [
+                           {
+                               "source":  "assets/minecraft/blockstates/lily_pad.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/blockstates/lily_pad.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/flowering_lily_pad_1.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/flowering_lily_pad_1.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/flowering_lily_pad_2.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/flowering_lily_pad_2.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/flowering_lily_pad_3.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/flowering_lily_pad_3.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/flowering_lily_pad_4.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/flowering_lily_pad_4.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/flowering_lily_pad_5.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/flowering_lily_pad_5.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/spore_blossom.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/spore_blossom.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/spore_blossom_base.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/spore_blossom_base.png"
+                           },
+                           {
+                               "source":  "pack.png",
+                               "kind":  "root",
+                               "output":  "pack.png"
+                           }
+                       ],
+    "files":  [
+                  "assets/minecraft/blockstates/lily_pad.json",
+                  "assets/minecraft/models/block/flowering_lily_pad_1.json",
+                  "assets/minecraft/models/block/flowering_lily_pad_2.json",
+                  "assets/minecraft/models/block/flowering_lily_pad_3.json",
+                  "assets/minecraft/models/block/flowering_lily_pad_4.json",
+                  "assets/minecraft/models/block/flowering_lily_pad_5.json",
+                  "assets/minecraft/textures/block/spore_blossom.png",
+                  "assets/minecraft/textures/block/spore_blossom_base.png",
+                  "pack.mcmeta",
+                  "pack.png"
+              ]
+}
