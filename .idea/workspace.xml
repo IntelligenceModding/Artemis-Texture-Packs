@@ -4,73 +4,458 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added swords_to_lightsabers">
+    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_mud_color">
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_mud_color/drop/textures/block/mud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_mud_color/drop/textures/block/muddy_mangrove_roots_side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_mud_color/drop/textures/block/muddy_mangrove_roots_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_mud_color/pack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.10.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.11.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.2.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.2.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.13.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.13.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.13.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.14.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.14.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.14.3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.14.4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.14.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.15.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.15.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.15.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.16.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.17.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.17.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.18.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.18.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.18.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.19.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.19.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.19.3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.19.4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.19.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.6.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.20.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.10.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.11.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.6.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.7.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.8.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-1.21.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-26.1.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-26.1.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-26.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/zips/swords_to_lightsabers/swords_to_lightsabers-26.2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.10.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.11.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/1.21.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.2.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.2.json" beforeDir="false" afterPath="$PROJECT_DIR$/cache/vanilla-asset-catalogs/resolved-pack-routes/swords_to_lightsabers/26.2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_packs/swords_to_lightsabers/pack.build.psd1" beforeDir="false" afterPath="$PROJECT_DIR$/resource_packs/swords_to_lightsabers/pack.build.psd1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.13/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.14/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.15/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.16/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.17/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.18/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.19/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20.6/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.20/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.10/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.11/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.6/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.7/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.8/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21.9/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/1.21/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/copper_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/diamond_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/golden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/iron_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/netherite_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/stone_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/assets/minecraft/textures/item/wooden_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/swords_to_lightsabers/26.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.13.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.13.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.14.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.14.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.14.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.14.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.15.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.15.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.17.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.18.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.18.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.19.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.19.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.19.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.19.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/1.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/swords_to_lightsabers/26.2.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +509,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/resource_packs/swords_to_lightsabers/drop/textures/item",
+    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/alternative_mud_color",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,11 +520,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\alternative_mud_color" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\swords_to_lightsabers\drop\textures\item" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\swords_to_lightsabers" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\textures\block" />
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\blockstates" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_lily_pads\assets\minecraft\models\block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\swords_to_lightsabers" />
@@ -230,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782914463726</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added alternative_mud_color">
+      <option name="closed" value="true" />
+      <created>1782916352123</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782916352123</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +640,7 @@
     <MESSAGE value="Added better_carpets" />
     <MESSAGE value="Added flowering_lily_pads" />
     <MESSAGE value="Added swords_to_lightsabers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added swords_to_lightsabers" />
+    <MESSAGE value="Added alternative_mud_color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alternative_mud_color" />
   </component>
 </project>
