@@ -9,6 +9,11 @@
                  ],
     "resolvedInputs":  [
                            {
+                               "source":  "drop/textures/item/copper_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/copper_sword.png"
+                           },
+                           {
                                "source":  "drop/textures/item/diamond_sword.png",
                                "kind":  "auto",
                                "output":  "assets/minecraft/textures/item/diamond_sword.png"
@@ -45,6 +50,7 @@
                            }
                        ],
     "files":  [
+                  "assets/minecraft/textures/item/copper_sword.png",
                   "assets/minecraft/textures/item/diamond_sword.png",
                   "assets/minecraft/textures/item/golden_sword.png",
                   "assets/minecraft/textures/item/iron_sword.png",
