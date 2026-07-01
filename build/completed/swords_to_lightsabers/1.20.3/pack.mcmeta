@@ -1,0 +1,10 @@
+﻿{
+    "pack":  {
+                 "description":  "Swords To Lightsabers for Minecraft 1.20.3",
+                 "pack_format":  22,
+                 "supported_formats":  {
+                                           "min_inclusive":  22,
+                                           "max_inclusive":  22
+                                       }
+             }
+}

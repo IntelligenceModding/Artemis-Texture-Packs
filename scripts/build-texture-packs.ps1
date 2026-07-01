@@ -322,6 +322,103 @@ function Get-PackBuildOptions {
     return Import-PowerShellDataFile -Path $configPath
 }
 
+function Get-VersionOrderLookup {
+    param([Parameter(Mandatory = $true)]$Config)
+
+    $versionOrder = @{}
+    $orderedVersions = @($Config.Versions)
+    for ($index = 0; $index -lt $orderedVersions.Count; $index++) {
+        $versionOrder[[string]$orderedVersions[$index].Id] = $index
+    }
+
+    return $versionOrder
+}
+
+function Assert-KnownVersionSelectorId {
+    param(
+        [Parameter(Mandatory = $true)][string]$VersionId,
+        [Parameter(Mandatory = $true)][string]$OptionName,
+        [Parameter(Mandatory = $true)][hashtable]$VersionOrder,
+        [Parameter(Mandatory = $true)][string]$ContextDescription
+    )
+
+    if (-not $VersionOrder.ContainsKey($VersionId)) {
+        throw "$ContextDescription requests unknown version id '$VersionId' in option '$OptionName'."
+    }
+}
+
+function Test-VersionSelectorMatch {
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Options,
+        [Parameter(Mandatory = $true)]$VersionConfig,
+        [Parameter(Mandatory = $true)][hashtable]$VersionOrder,
+        [Parameter(Mandatory = $true)][string]$ContextDescription
+    )
+
+    $versionId = [string]$VersionConfig.Id
+    $versionIndex = [int]$VersionOrder[$versionId]
+
+    if ($Options.ContainsKey('Versions') -and $Options.Versions) {
+        $lookup = @{}
+        foreach ($candidateVersionId in @($Options.Versions)) {
+            $normalizedVersionId = [string]$candidateVersionId
+            Assert-KnownVersionSelectorId -VersionId $normalizedVersionId -OptionName 'Versions' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+            $lookup[$normalizedVersionId] = $true
+        }
+
+        if (-not $lookup.ContainsKey($versionId)) {
+            return $false
+        }
+    }
+
+    if ($Options.ContainsKey('ExcludeVersions') -and $Options.ExcludeVersions) {
+        $lookup = @{}
+        foreach ($candidateVersionId in @($Options.ExcludeVersions)) {
+            $normalizedVersionId = [string]$candidateVersionId
+            Assert-KnownVersionSelectorId -VersionId $normalizedVersionId -OptionName 'ExcludeVersions' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+            $lookup[$normalizedVersionId] = $true
+        }
+
+        if ($lookup.ContainsKey($versionId)) {
+            return $false
+        }
+    }
+
+    if ($Options.ContainsKey('MinVersion') -and $Options.MinVersion) {
+        $minVersionId = [string]$Options.MinVersion
+        Assert-KnownVersionSelectorId -VersionId $minVersionId -OptionName 'MinVersion' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+        if ($versionIndex -lt [int]$VersionOrder[$minVersionId]) {
+            return $false
+        }
+    }
+
+    if ($Options.ContainsKey('MaxVersion') -and $Options.MaxVersion) {
+        $maxVersionId = [string]$Options.MaxVersion
+        Assert-KnownVersionSelectorId -VersionId $maxVersionId -OptionName 'MaxVersion' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+        if ($versionIndex -gt [int]$VersionOrder[$maxVersionId]) {
+            return $false
+        }
+    }
+
+    if ($Options.ContainsKey('AfterVersion') -and $Options.AfterVersion) {
+        $afterVersionId = [string]$Options.AfterVersion
+        Assert-KnownVersionSelectorId -VersionId $afterVersionId -OptionName 'AfterVersion' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+        if ($versionIndex -le [int]$VersionOrder[$afterVersionId]) {
+            return $false
+        }
+    }
+
+    if ($Options.ContainsKey('BeforeVersion') -and $Options.BeforeVersion) {
+        $beforeVersionId = [string]$Options.BeforeVersion
+        Assert-KnownVersionSelectorId -VersionId $beforeVersionId -OptionName 'BeforeVersion' -VersionOrder $VersionOrder -ContextDescription $ContextDescription
+        if ($versionIndex -ge [int]$VersionOrder[$beforeVersionId]) {
+            return $false
+        }
+    }
+
+    return $true
+}
+
 function Get-PackSelectedVersions {
     param(
         [Parameter(Mandatory = $true)]$PackDirectory,
@@ -334,77 +431,12 @@ function Get-PackSelectedVersions {
         return @($GloballySelectedVersions)
     }
 
-    $selectedVersions = @($GloballySelectedVersions)
-    $versionOrder = @{}
-    $orderedVersions = @($Config.Versions)
-    for ($index = 0; $index -lt $orderedVersions.Count; $index++) {
-        $versionOrder[[string]$orderedVersions[$index].Id] = $index
-    }
+    $versionOrder = Get-VersionOrderLookup -Config $Config
+    $contextDescription = "Pack '$($PackDirectory.Name)' inside $([string]$Config.PackBuildConfigFile)"
 
-    function Assert-KnownPackVersionOption {
-        param(
-            [Parameter(Mandatory = $true)][string]$VersionId,
-            [Parameter(Mandatory = $true)][string]$OptionName
-        )
-
-        if (-not $versionOrder.ContainsKey($VersionId)) {
-            throw "Pack '$($PackDirectory.Name)' requests unknown version id '$VersionId' in option '$OptionName' inside $([string]$Config.PackBuildConfigFile)."
-        }
-    }
-
-    if ($packOptions.ContainsKey('Versions') -and $packOptions.Versions) {
-        $lookup = @{}
-        foreach ($versionId in @($packOptions.Versions)) {
-            $lookup[[string]$versionId] = $true
-        }
-
-        $selectedVersions = @($selectedVersions | Where-Object { $lookup.ContainsKey($_.Id) })
-
-        $foundIds = @($selectedVersions | ForEach-Object { $_.Id })
-        $missing = @($lookup.Keys | Where-Object { $_ -notin $foundIds })
-        if ($missing.Count -gt 0) {
-            throw "Pack '$($PackDirectory.Name)' requests unknown version id(s) in $([string]$Config.PackBuildConfigFile): $($missing -join ', ')"
-        }
-    }
-
-    if ($packOptions.ContainsKey('ExcludeVersions') -and $packOptions.ExcludeVersions) {
-        $lookup = @{}
-        foreach ($versionId in @($packOptions.ExcludeVersions)) {
-            $lookup[[string]$versionId] = $true
-        }
-
-        $selectedVersions = @($selectedVersions | Where-Object { -not $lookup.ContainsKey($_.Id) })
-    }
-
-    if ($packOptions.ContainsKey('MinVersion') -and $packOptions.MinVersion) {
-        $minVersionId = [string]$packOptions.MinVersion
-        Assert-KnownPackVersionOption -VersionId $minVersionId -OptionName 'MinVersion'
-        $minIndex = [int]$versionOrder[$minVersionId]
-        $selectedVersions = @($selectedVersions | Where-Object { [int]$versionOrder[$_.Id] -ge $minIndex })
-    }
-
-    if ($packOptions.ContainsKey('MaxVersion') -and $packOptions.MaxVersion) {
-        $maxVersionId = [string]$packOptions.MaxVersion
-        Assert-KnownPackVersionOption -VersionId $maxVersionId -OptionName 'MaxVersion'
-        $maxIndex = [int]$versionOrder[$maxVersionId]
-        $selectedVersions = @($selectedVersions | Where-Object { [int]$versionOrder[$_.Id] -le $maxIndex })
-    }
-
-    if ($packOptions.ContainsKey('AfterVersion') -and $packOptions.AfterVersion) {
-        $afterVersionId = [string]$packOptions.AfterVersion
-        Assert-KnownPackVersionOption -VersionId $afterVersionId -OptionName 'AfterVersion'
-        $afterIndex = [int]$versionOrder[$afterVersionId]
-        $selectedVersions = @($selectedVersions | Where-Object { [int]$versionOrder[$_.Id] -gt $afterIndex })
-    }
-
-    if ($packOptions.ContainsKey('BeforeVersion') -and $packOptions.BeforeVersion) {
-        $beforeVersionId = [string]$packOptions.BeforeVersion
-        Assert-KnownPackVersionOption -VersionId $beforeVersionId -OptionName 'BeforeVersion'
-        $beforeIndex = [int]$versionOrder[$beforeVersionId]
-        $selectedVersions = @($selectedVersions | Where-Object { [int]$versionOrder[$_.Id] -lt $beforeIndex })
-    }
-
-    return $selectedVersions
+    return @($GloballySelectedVersions | Where-Object {
+        Test-VersionSelectorMatch -Options $packOptions -VersionConfig $_ -VersionOrder $versionOrder -ContextDescription $contextDescription
+    })
 }
 
 function Get-PackTokens {
@@ -762,6 +794,12 @@ function Get-PackInputFiles {
     $canonicalAssetsFolder = [string]$Config.CanonicalAssetsFolder
     $autoSortFolder = [string]$Config.AutoSortFolder
     $autoSortMappings = @($Config.AutoSortMappings)
+    $packOptions = Get-PackBuildOptions -PackDirectory $PackDirectory -Config $Config
+    $fileRules = @()
+    if ($packOptions.ContainsKey('FileRules') -and $packOptions.FileRules) {
+        $fileRules = @($packOptions.FileRules)
+    }
+    $versionOrder = Get-VersionOrderLookup -Config $Config
 
     $inputFiles = New-Object System.Collections.Generic.List[object]
 
@@ -789,6 +827,9 @@ function Get-PackInputFiles {
                     VirtualPath = [string]$definition.VirtualRoot
                     HintPath = ''
                     SourceRelativePath = Get-NormalizedRelativePath -BasePath $packRoot -FullPath $fullPath
+                    RulePaths = @(
+                        Get-NormalizedRelativePath -BasePath $packRoot -FullPath $fullPath
+                    )
                     Priority = [int]$definition.Priority
                 })
             }
@@ -814,6 +855,10 @@ function Get-PackInputFiles {
                         VirtualPath = $virtualPath
                         HintPath = ''
                         SourceRelativePath = Get-NormalizedRelativePath -BasePath $packRoot -FullPath $file.FullName
+                        RulePaths = @(
+                            Get-NormalizedRelativePath -BasePath $packRoot -FullPath $file.FullName
+                            $relative
+                        )
                         Priority = [int]$definition.Priority
                     })
                 }
@@ -853,6 +898,10 @@ function Get-PackInputFiles {
                             AssetPrefix = [string]$mapping.AssetPrefix
                             CategoryFolder = [string]$mapping.Folder
                             SourceRelativePath = Get-NormalizedRelativePath -BasePath $packRoot -FullPath $file.FullName
+                            RulePaths = @(
+                                Get-NormalizedRelativePath -BasePath $packRoot -FullPath $file.FullName
+                                (([string]$mapping.Folder).TrimEnd('/') + '/' + $relative)
+                            )
                             Priority = [int]$definition.Priority
                         })
                     }
@@ -861,7 +910,56 @@ function Get-PackInputFiles {
         }
     }
 
-    return @($inputFiles | Sort-Object Priority, SourcePath)
+    if ($fileRules.Count -eq 0) {
+        return @($inputFiles | Sort-Object Priority, SourcePath)
+    }
+
+    $contextPrefix = "Pack '$($PackDirectory.Name)' inside $([string]$Config.PackBuildConfigFile)"
+    $selectedInputFiles = New-Object System.Collections.Generic.List[object]
+
+    foreach ($inputFile in @($inputFiles | Sort-Object Priority, SourcePath)) {
+        $matchingRules = New-Object System.Collections.Generic.List[hashtable]
+
+        foreach ($rawRule in $fileRules) {
+            if ($null -eq $rawRule) {
+                continue
+            }
+
+            $rule = ConvertTo-Hashtable -InputObject $rawRule
+            $rulePath = [string](Get-HashtableValueOrDefault -Table $rule -Key 'Path' -DefaultValue '')
+            if ([string]::IsNullOrWhiteSpace($rulePath)) {
+                throw "$contextPrefix has a FileRules entry without a non-empty 'Path'."
+            }
+
+            foreach ($candidatePath in @($inputFile.RulePaths)) {
+                if (Test-RuleMatch -Path ([string]$candidatePath) -Rule $rulePath) {
+                    $matchingRules.Add($rule)
+                    break
+                }
+            }
+        }
+
+        if ($matchingRules.Count -eq 0) {
+            $selectedInputFiles.Add($inputFile)
+            continue
+        }
+
+        $includeForVersion = $false
+        foreach ($rule in $matchingRules) {
+            $rulePath = [string]$rule.Path
+            $contextDescription = "$contextPrefix FileRules Path '$rulePath'"
+            if (Test-VersionSelectorMatch -Options $rule -VersionConfig $VersionConfig -VersionOrder $versionOrder -ContextDescription $contextDescription) {
+                $includeForVersion = $true
+                break
+            }
+        }
+
+        if ($includeForVersion) {
+            $selectedInputFiles.Add($inputFile)
+        }
+    }
+
+    return $selectedInputFiles.ToArray()
 }
 
 function Assert-ValidJsonFile {

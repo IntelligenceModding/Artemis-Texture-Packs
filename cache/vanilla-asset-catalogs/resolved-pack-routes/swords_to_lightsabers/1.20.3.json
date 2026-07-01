@@ -1,0 +1,8 @@
+﻿{
+    "drop/textures/item/netherite_sword.png":  "assets/minecraft/textures/item/netherite_sword.png",
+    "drop/textures/item/diamond_sword.png":  "assets/minecraft/textures/item/diamond_sword.png",
+    "drop/textures/item/wooden_sword.png":  "assets/minecraft/textures/item/wooden_sword.png",
+    "drop/textures/item/golden_sword.png":  "assets/minecraft/textures/item/golden_sword.png",
+    "drop/textures/item/stone_sword.png":  "assets/minecraft/textures/item/stone_sword.png",
+    "drop/textures/item/iron_sword.png":  "assets/minecraft/textures/item/iron_sword.png"
+}

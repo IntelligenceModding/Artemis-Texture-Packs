@@ -1,0 +1,57 @@
+﻿{
+    "packName":  "swords_to_lightsabers",
+    "versionId":  "1.20.4",
+    "status":  "success",
+    "outputFolder":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\completed\\swords_to_lightsabers\\1.20.4",
+    "zipPath":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\zips\\swords_to_lightsabers\\swords_to_lightsabers-1.20.4.zip",
+    "warnings":  [
+
+                 ],
+    "resolvedInputs":  [
+                           {
+                               "source":  "drop/textures/item/diamond_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/diamond_sword.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/golden_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/golden_sword.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/iron_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/iron_sword.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/netherite_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/netherite_sword.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/stone_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/stone_sword.png"
+                           },
+                           {
+                               "source":  "drop/textures/item/wooden_sword.png",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/textures/item/wooden_sword.png"
+                           },
+                           {
+                               "source":  "pack.png",
+                               "kind":  "root",
+                               "output":  "pack.png"
+                           }
+                       ],
+    "files":  [
+                  "assets/minecraft/textures/item/diamond_sword.png",
+                  "assets/minecraft/textures/item/golden_sword.png",
+                  "assets/minecraft/textures/item/iron_sword.png",
+                  "assets/minecraft/textures/item/netherite_sword.png",
+                  "assets/minecraft/textures/item/stone_sword.png",
+                  "assets/minecraft/textures/item/wooden_sword.png",
+                  "pack.mcmeta",
+                  "pack.png"
+              ]
+}
