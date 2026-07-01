@@ -49,9 +49,7 @@
     )
 
     BaseDescription = '{PackDisplayName} for Minecraft {VersionId}'
-    BuildRoot = 'build/completed'
-    ZipRoot = 'build/zips'
-    ReportRoot = 'build/reports'
+    BuildRoot = 'build'
     VanillaCatalogCacheRoot = 'cache/vanilla-asset-catalogs'
     MojangVersionManifestUrl = 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
     PackageNameTemplate = '{PackName}-{VersionId}'

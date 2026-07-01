@@ -17,27 +17,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Restore builder cache
+        uses: actions/cache@v4
+        with:
+          path: cache/vanilla-asset-catalogs
+          key: vanilla-asset-catalogs-${{ hashFiles('config/minecraft-release-version-matrix.psd1') }}
+          restore-keys: |
+            vanilla-asset-catalogs-
+
       - name: Build packs
         shell: pwsh
-        run: .\scripts\build-texture-packs.ps1 -Clean
-
-      - name: Upload completed packs
-        uses: actions/upload-artifact@v4
-        with:
-          name: completed-packs
-          path: build/completed
-          if-no-files-found: error
+        run: .\scripts\build-texture-packs.ps1
 
       - name: Upload zip packs
         uses: actions/upload-artifact@v4
         with:
           name: zipped-packs
-          path: build/zips
-          if-no-files-found: error
-
-      - name: Upload build reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-reports
-          path: build/reports
+          path: build
           if-no-files-found: error

@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added nuggets_to_coins">
+    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added better_cake_slices">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build-packs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build-packs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Build All Texture Packs.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Build All Texture Packs.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Build Selected Texture Packs.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Build Selected Texture Packs.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build All Texture Packs.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Create New Texture Pack.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/texture-pack.build.psd1" beforeDir="false" afterPath="$PROJECT_DIR$/config/texture-pack.build.psd1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource_packs/better_carpets/pack.build.psd1" beforeDir="false" afterPath="$PROJECT_DIR$/resource_packs/better_carpets/pack.build.psd1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource_packs/flowering_lily_pads/pack.build.psd1" beforeDir="false" afterPath="$PROJECT_DIR$/resource_packs/flowering_lily_pads/pack.build.psd1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-selected-texture-packs.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/new-texture-pack.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/new-texture-pack.ps1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +66,12 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Shell Script.Build All Texture Packs.executor": "Run",
     "Shell Script.Build Selected Texture Packs.executor": "Run",
     "Shell Script.Create New Texture Pack.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/alternative_end_rod",
     "node.js.detected.package.eslint": "true",
@@ -84,7 +98,7 @@
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\flowering_oak_leaves\assets\minecraft\blockstates" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Build Selected Texture Packs">
+  <component name="RunManager" selected="Shell Script.Build All Texture Packs">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Artemis-Texture-Packs" />
       <method v="2">
@@ -132,6 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1782900668852</updated>
       <workItem from="1782900671063" duration="8851000" />
+      <workItem from="1782942605456" duration="762000" />
     </task>
     <task id="LOCAL-00005" summary="Added better_carpets">
       <option name="closed" value="true" />

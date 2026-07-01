@@ -3,6 +3,8 @@ param(
     [string]$ConfigPath = 'config/texture-pack.build.psd1',
     [string[]]$Version,
     [string[]]$Pack,
+    [switch]$PromptForPack,
+    [switch]$PromptForVersion,
     [switch]$ListVersions,
     [switch]$ListPacks,
     [switch]$Clean
@@ -30,6 +32,10 @@ function Ensure-Directory {
     if (-not (Test-Path -LiteralPath $Path)) {
         New-Item -ItemType Directory -Path $Path -Force | Out-Null
     }
+}
+
+function Get-TemporaryBuildRoot {
+    return Join-Path -Path ([System.IO.Path]::GetTempPath()) -ChildPath 'artemis-texture-pack-builder'
 }
 
 function Get-NormalizedRelativePath {
@@ -276,6 +282,68 @@ function Convert-ToPackDisplayName {
     return [System.Globalization.CultureInfo]::InvariantCulture.TextInfo.ToTitleCase($spaced.ToLowerInvariant())
 }
 
+function Read-RequestedPackNames {
+    param(
+        [Parameter(Mandatory = $true)][string]$RepoRoot,
+        [Parameter(Mandatory = $true)]$Config
+    )
+
+    $availablePacks = @(Get-PackDirectories -RepoRoot $RepoRoot -Config $Config -RequestedPackNames @() | Select-Object -ExpandProperty Name)
+    if ($availablePacks.Count -eq 0) {
+        throw 'No texture packs are available to select.'
+    }
+
+    Write-Host 'Available texture packs:'
+    foreach ($packName in $availablePacks) {
+        Write-Host "  - $packName"
+    }
+    Write-Host ''
+
+    $inputValue = Read-Host 'Enter texture pack name(s) to build (comma-separated)'
+    if ([string]::IsNullOrWhiteSpace($inputValue)) {
+        throw 'No texture pack names entered.'
+    }
+
+    $requestedPacks = @(
+        $inputValue.Split(',', [System.StringSplitOptions]::RemoveEmptyEntries) |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { $_ } |
+            Select-Object -Unique
+    )
+
+    if ($requestedPacks.Count -eq 0) {
+        throw 'No valid texture pack names were entered.'
+    }
+
+    return $requestedPacks
+}
+
+function Read-RequestedVersions {
+    param([Parameter(Mandatory = $true)]$Config)
+
+    Write-Host 'Configured Minecraft versions:'
+    foreach ($entry in @($Config.Versions)) {
+        if (-not $entry.Enabled) {
+            continue
+        }
+
+        Write-Host "  - $($entry.Id)"
+    }
+    Write-Host ''
+    Write-Host 'Examples:'
+    Write-Host '  1.21.11'
+    Write-Host '  1.20.4..1.21.11'
+    Write-Host '  1.20.4, 1.20.6..1.21.2'
+    Write-Host ''
+
+    $inputValue = Read-Host 'Enter version or version range'
+    if ([string]::IsNullOrWhiteSpace($inputValue)) {
+        throw 'No version selection entered.'
+    }
+
+    return @(Expand-RequestedVersionSelection -InputValue $inputValue -Config $Config)
+}
+
 function Get-PackDirectories {
     param(
         [Parameter(Mandatory = $true)][string]$RepoRoot,
@@ -332,6 +400,63 @@ function Get-VersionOrderLookup {
     }
 
     return $versionOrder
+}
+
+function Expand-RequestedVersionSelection {
+    param(
+        [Parameter(Mandatory = $true)][string]$InputValue,
+        [Parameter(Mandatory = $true)]$Config
+    )
+
+    $versionOrder = Get-VersionOrderLookup -Config $Config
+    $orderedVersions = @($Config.Versions)
+    $selectedVersionIds = New-Object System.Collections.Generic.List[string]
+    $seen = @{}
+    $contextDescription = 'Prompted version selection'
+
+    $segments = @(
+        $InputValue.Split(',', [System.StringSplitOptions]::RemoveEmptyEntries) |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { $_ }
+    )
+
+    if ($segments.Count -eq 0) {
+        throw 'No valid version selection was entered.'
+    }
+
+    foreach ($segment in $segments) {
+        if ($segment -match '^(?<start>.+?)\.\.(?<end>.+)$') {
+            $startVersionId = $Matches.start.Trim()
+            $endVersionId = $Matches.end.Trim()
+
+            Assert-KnownVersionSelectorId -VersionId $startVersionId -OptionName 'VersionRangeStart' -VersionOrder $versionOrder -ContextDescription $contextDescription
+            Assert-KnownVersionSelectorId -VersionId $endVersionId -OptionName 'VersionRangeEnd' -VersionOrder $versionOrder -ContextDescription $contextDescription
+
+            $startIndex = [int]$versionOrder[$startVersionId]
+            $endIndex = [int]$versionOrder[$endVersionId]
+            if ($startIndex -gt $endIndex) {
+                throw "Prompted version range start '$startVersionId' comes after end '$endVersionId'. Use the configured version order."
+            }
+
+            for ($index = $startIndex; $index -le $endIndex; $index++) {
+                $versionId = [string]$orderedVersions[$index].Id
+                if (-not $seen.ContainsKey($versionId)) {
+                    $seen[$versionId] = $true
+                    $selectedVersionIds.Add($versionId)
+                }
+            }
+
+            continue
+        }
+
+        Assert-KnownVersionSelectorId -VersionId $segment -OptionName 'Version' -VersionOrder $versionOrder -ContextDescription $contextDescription
+        if (-not $seen.ContainsKey($segment)) {
+            $seen[$segment] = $true
+            $selectedVersionIds.Add($segment)
+        }
+    }
+
+    return @($selectedVersionIds)
 }
 
 function Assert-KnownVersionSelectorId {
@@ -1089,17 +1214,6 @@ function New-ZipFromDirectory {
     }
 }
 
-function Write-BuildReport {
-    param(
-        [Parameter(Mandatory = $true)][string]$ReportPath,
-        [Parameter(Mandatory = $true)]$Report
-    )
-
-    Ensure-Directory -Path ([System.IO.Path]::GetDirectoryName($ReportPath))
-    $json = $Report | ConvertTo-Json -Depth 100
-    Set-Content -LiteralPath $ReportPath -Value $json -Encoding UTF8
-}
-
 function Build-PackVersion {
     param(
         [Parameter(Mandatory = $true)][string]$RepoRoot,
@@ -1125,18 +1239,12 @@ function Build-PackVersion {
 
     $tokens = Get-PackTokens -Config $Config -PackDirectory $PackDirectory -VersionConfig $VersionConfig
     $buildRoot = Resolve-FullPath -BasePath $RepoRoot -Path ([string]$Config.BuildRoot)
-    $zipRoot = Resolve-FullPath -BasePath $RepoRoot -Path ([string]$Config.ZipRoot)
-    $reportRoot = Resolve-FullPath -BasePath $RepoRoot -Path ([string]$Config.ReportRoot)
-
     Ensure-Directory -Path $buildRoot
-    Ensure-Directory -Path $zipRoot
-    Ensure-Directory -Path $reportRoot
-
-    $outputFolder = Join-Path -Path (Join-Path -Path $buildRoot -ChildPath $PackDirectory.Name) -ChildPath ([string]$VersionConfig.Id)
-    $zipPackRoot = Join-Path -Path $zipRoot -ChildPath $PackDirectory.Name
     $packageBaseName = Convert-Tokens -Value ([string]$Config.PackageNameTemplate) -Tokens $tokens
+    $zipPackRoot = Join-Path -Path $buildRoot -ChildPath $PackDirectory.Name
     $zipPath = Join-Path -Path $zipPackRoot -ChildPath "$packageBaseName.zip"
-    $reportPath = Join-Path -Path (Join-Path -Path $reportRoot -ChildPath $PackDirectory.Name) -ChildPath "$($VersionConfig.Id).json"
+    $tempBuildRoot = Get-TemporaryBuildRoot
+    $outputFolder = Join-Path -Path (Join-Path -Path $tempBuildRoot -ChildPath $PackDirectory.Name) -ChildPath ([string]$VersionConfig.Id)
 
     if (Test-Path -LiteralPath $outputFolder) {
         Remove-Item -LiteralPath $outputFolder -Recurse -Force
@@ -1145,160 +1253,139 @@ function Build-PackVersion {
         Remove-Item -LiteralPath $zipPath -Force
     }
 
-    Ensure-Directory -Path $outputFolder
     Ensure-Directory -Path $zipPackRoot
+    Ensure-Directory -Path $outputFolder
+    try {
+        $inputFiles = Get-PackInputFiles -PackDirectory $PackDirectory -Config $Config -VersionConfig $VersionConfig
+        $warnings = New-Object System.Collections.Generic.List[string]
+        $destinations = @{}
+        $catalog = $null
+        $routeCache = Get-PackRouteCache -RepoRoot $RepoRoot -Config $Config -PackDirectory $PackDirectory -VersionConfig $VersionConfig
+        $resolvedRouteCache = @{}
 
-    $inputFiles = Get-PackInputFiles -PackDirectory $PackDirectory -Config $Config -VersionConfig $VersionConfig
-    $warnings = New-Object System.Collections.Generic.List[string]
-    $destinations = @{}
-    $catalog = $null
-    $routeCache = Get-PackRouteCache -RepoRoot $RepoRoot -Config $Config -PackDirectory $PackDirectory -VersionConfig $VersionConfig
-    $resolvedRouteCache = @{}
-    $resolvedInputs = New-Object System.Collections.Generic.List[object]
+        foreach ($inputFile in $inputFiles) {
+            $resolvedPath = switch ($inputFile.Kind) {
+                'root' { $inputFile.VirtualPath }
+                'direct' { $inputFile.VirtualPath }
+                'auto' {
+                    if ($null -eq $catalog) {
+                        $catalog = Get-VanillaAssetCatalog -RepoRoot $RepoRoot -Config $Config -VersionConfig $VersionConfig
+                    }
 
-    foreach ($inputFile in $inputFiles) {
-        $resolvedPath = switch ($inputFile.Kind) {
-            'root' { $inputFile.VirtualPath }
-            'direct' { $inputFile.VirtualPath }
-            'auto' {
-                if ($null -eq $catalog) {
-                    $catalog = Get-VanillaAssetCatalog -RepoRoot $RepoRoot -Config $Config -VersionConfig $VersionConfig
+                    Resolve-AutoAssetPath -FileName $inputFile.VirtualPath -HintPath $inputFile.HintPath -AssetPrefix $inputFile.AssetPrefix -Catalog $catalog -CategoryFolder $inputFile.CategoryFolder -RouteCache $routeCache -RouteCacheKey $inputFile.SourceRelativePath
+                }
+                default {
+                    throw "Unknown input kind '$($inputFile.Kind)'."
+                }
+            }
+
+            if ($resolvedPath -ne 'pack.png' -and $resolvedPath.StartsWith('assets/', [System.StringComparison]::OrdinalIgnoreCase)) {
+                $resolvedPath = Get-TransformedPath -RelativePath $resolvedPath -VersionConfig $VersionConfig
+                if ($null -eq $resolvedPath) {
+                    continue
+                }
+            }
+
+            if ($inputFile.Kind -eq 'auto') {
+                $resolvedRouteCache[$inputFile.SourceRelativePath] = $resolvedPath
+            }
+
+            if ($Config.Validation.RequireLowercasePaths -and $resolvedPath -cmatch '[A-Z]') {
+                throw "Output path contains uppercase characters for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $resolvedPath"
+            }
+
+            if ($destinations.ContainsKey($resolvedPath)) {
+                $existing = $destinations[$resolvedPath]
+                if ([int]$inputFile.Priority -gt [int]$existing.Priority) {
+                    $warnings.Add("Overriding '$resolvedPath' with '$($inputFile.SourcePath)' over '$($existing.SourcePath)'")
+                    $destinations[$resolvedPath] = [pscustomobject]@{
+                        SourcePath = $inputFile.SourcePath
+                        Priority = [int]$inputFile.Priority
+                    }
+                }
+                elseif ([int]$inputFile.Priority -eq [int]$existing.Priority) {
+                    throw "Two source files resolve to the same output path for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $resolvedPath"
                 }
 
-                Resolve-AutoAssetPath -FileName $inputFile.VirtualPath -HintPath $inputFile.HintPath -AssetPrefix $inputFile.AssetPrefix -Catalog $catalog -CategoryFolder $inputFile.CategoryFolder -RouteCache $routeCache -RouteCacheKey $inputFile.SourceRelativePath
-            }
-            default {
-                throw "Unknown input kind '$($inputFile.Kind)'."
-            }
-        }
-
-        if ($resolvedPath -ne 'pack.png' -and $resolvedPath.StartsWith('assets/', [System.StringComparison]::OrdinalIgnoreCase)) {
-            $resolvedPath = Get-TransformedPath -RelativePath $resolvedPath -VersionConfig $VersionConfig
-            if ($null -eq $resolvedPath) {
                 continue
             }
+
+            $destinations[$resolvedPath] = [pscustomobject]@{
+                SourcePath = $inputFile.SourcePath
+                Priority = [int]$inputFile.Priority
+            }
         }
 
-        if ($inputFile.Kind -eq 'auto') {
-            $resolvedRouteCache[$inputFile.SourceRelativePath] = $resolvedPath
+        foreach ($destPath in $destinations.Keys) {
+            $fullDestPath = Resolve-FullPath -BasePath $outputFolder -Path $destPath
+            Ensure-Directory -Path ([System.IO.Path]::GetDirectoryName($fullDestPath))
+            Copy-Item -LiteralPath $destinations[$destPath].SourcePath -Destination $fullDestPath -Force
         }
 
-        if ($Config.Validation.RequireLowercasePaths -and $resolvedPath -cmatch '[A-Z]') {
-            throw "Output path contains uppercase characters for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $resolvedPath"
-        }
+        $mcmetaObject = New-PackMcmetaObject -Tokens $tokens -VersionConfig $VersionConfig
+        $mcmetaJson = $mcmetaObject | ConvertTo-Json -Depth 100
+        Set-Content -LiteralPath (Join-Path -Path $outputFolder -ChildPath 'pack.mcmeta') -Value $mcmetaJson -Encoding UTF8
 
-        if ($destinations.ContainsKey($resolvedPath)) {
-            $existing = $destinations[$resolvedPath]
-            if ([int]$inputFile.Priority -gt [int]$existing.Priority) {
-                $warnings.Add("Overriding '$resolvedPath' with '$($inputFile.SourcePath)' over '$($existing.SourcePath)'")
-                $destinations[$resolvedPath] = [pscustomobject]@{
-                    SourcePath = $inputFile.SourcePath
-                    Priority = [int]$inputFile.Priority
+        if ($Config.Validation.ParseJsonFiles) {
+            foreach ($jsonFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.json') {
+                try {
+                    Assert-ValidJsonFile -Path $jsonFile.FullName
+                }
+                catch {
+                    throw "Invalid JSON in '$($jsonFile.FullName)': $($_.Exception.Message)"
                 }
             }
-            elseif ([int]$inputFile.Priority -eq [int]$existing.Priority) {
-                throw "Two source files resolve to the same output path for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $resolvedPath"
-            }
-
-            continue
         }
 
-        $destinations[$resolvedPath] = [pscustomobject]@{
-            SourcePath = $inputFile.SourcePath
-            Priority = [int]$inputFile.Priority
-        }
-
-        $resolvedInputs.Add([pscustomobject]@{
-            source = $inputFile.SourceRelativePath
-            kind = $inputFile.Kind
-            output = $resolvedPath
-        })
-    }
-
-    foreach ($destPath in $destinations.Keys) {
-        $fullDestPath = Resolve-FullPath -BasePath $outputFolder -Path $destPath
-        Ensure-Directory -Path ([System.IO.Path]::GetDirectoryName($fullDestPath))
-        Copy-Item -LiteralPath $destinations[$destPath].SourcePath -Destination $fullDestPath -Force
-    }
-
-    $mcmetaObject = New-PackMcmetaObject -Tokens $tokens -VersionConfig $VersionConfig
-    $mcmetaJson = $mcmetaObject | ConvertTo-Json -Depth 100
-    Set-Content -LiteralPath (Join-Path -Path $outputFolder -ChildPath 'pack.mcmeta') -Value $mcmetaJson -Encoding UTF8
-
-    if ($Config.Validation.ParseJsonFiles) {
-        foreach ($jsonFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.json') {
-            try {
-                Assert-ValidJsonFile -Path $jsonFile.FullName
-            }
-            catch {
-                throw "Invalid JSON in '$($jsonFile.FullName)': $($_.Exception.Message)"
-            }
-        }
-    }
-
-    if ($Config.Validation.ParseMcmetaFiles) {
-        foreach ($mcmetaFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.mcmeta') {
-            try {
-                Assert-ValidJsonFile -Path $mcmetaFile.FullName
-            }
-            catch {
-                throw "Invalid mcmeta JSON in '$($mcmetaFile.FullName)': $($_.Exception.Message)"
-            }
-        }
-    }
-
-    if ($Config.Validation.RequireTextureForTextureMcmeta) {
-        foreach ($mcmetaFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.png.mcmeta') {
-            $pngPath = $mcmetaFile.FullName.Substring(0, $mcmetaFile.FullName.Length - '.mcmeta'.Length)
-            if (-not (Test-Path -LiteralPath $pngPath)) {
-                throw "Texture metadata file is missing its texture pair: $($mcmetaFile.FullName)"
-            }
-        }
-    }
-
-    foreach ($requiredRule in @(Get-HashtableValueOrDefault -Table $VersionConfig -Key 'Required' -DefaultValue @())) {
-        $matched = $false
-        foreach ($builtPath in $destinations.Keys + @('pack.mcmeta')) {
-            if (Test-RuleMatch -Path $builtPath -Rule ([string]$requiredRule)) {
-                $matched = $true
-                break
+        if ($Config.Validation.ParseMcmetaFiles) {
+            foreach ($mcmetaFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.mcmeta') {
+                try {
+                    Assert-ValidJsonFile -Path $mcmetaFile.FullName
+                }
+                catch {
+                    throw "Invalid mcmeta JSON in '$($mcmetaFile.FullName)': $($_.Exception.Message)"
+                }
             }
         }
 
-        if (-not $matched) {
-            throw "Required output rule missing for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $requiredRule"
+        if ($Config.Validation.RequireTextureForTextureMcmeta) {
+            foreach ($mcmetaFile in Get-ChildItem -LiteralPath $outputFolder -File -Recurse -Filter '*.png.mcmeta') {
+                $pngPath = $mcmetaFile.FullName.Substring(0, $mcmetaFile.FullName.Length - '.mcmeta'.Length)
+                if (-not (Test-Path -LiteralPath $pngPath)) {
+                    throw "Texture metadata file is missing its texture pair: $($mcmetaFile.FullName)"
+                }
+            }
+        }
+
+        foreach ($requiredRule in @(Get-HashtableValueOrDefault -Table $VersionConfig -Key 'Required' -DefaultValue @())) {
+            $matched = $false
+            foreach ($builtPath in $destinations.Keys + @('pack.mcmeta')) {
+                if (Test-RuleMatch -Path $builtPath -Rule ([string]$requiredRule)) {
+                    $matched = $true
+                    break
+                }
+            }
+
+            if (-not $matched) {
+                throw "Required output rule missing for pack '$($PackDirectory.Name)' version '$($VersionConfig.Id)': $requiredRule"
+            }
+        }
+
+        New-ZipFromDirectory -SourceDirectory $outputFolder -DestinationPath $zipPath
+        Save-PackRouteCache -RepoRoot $RepoRoot -Config $Config -PackDirectory $PackDirectory -VersionConfig $VersionConfig -RouteCache $resolvedRouteCache
+
+        return @{
+            PackName = $PackDirectory.Name
+            VersionId = [string]$VersionConfig.Id
+            Status = 'success'
+            ZipPath = $zipPath
+            WarningCount = $warnings.Count
         }
     }
-
-    New-ZipFromDirectory -SourceDirectory $outputFolder -DestinationPath $zipPath
-
-    $builtFiles = @(Get-ChildItem -LiteralPath $outputFolder -File -Recurse | ForEach-Object {
-        Get-NormalizedRelativePath -BasePath $outputFolder -FullPath $_.FullName
-    } | Sort-Object)
-    $warningItems = @($warnings | ForEach-Object { $_ })
-    $resolvedInputItems = @($resolvedInputs | ForEach-Object { $_ })
-
-    $report = [ordered]@{
-        packName = $PackDirectory.Name
-        versionId = [string]$VersionConfig.Id
-        status = 'success'
-        outputFolder = $outputFolder
-        zipPath = $zipPath
-        warnings = $warningItems
-        resolvedInputs = $resolvedInputItems
-        files = $builtFiles
-    }
-    Write-BuildReport -ReportPath $reportPath -Report $report
-    Save-PackRouteCache -RepoRoot $RepoRoot -Config $Config -PackDirectory $PackDirectory -VersionConfig $VersionConfig -RouteCache $resolvedRouteCache
-
-    return @{
-        PackName = $PackDirectory.Name
-        VersionId = [string]$VersionConfig.Id
-        Status = 'success'
-        OutputFolder = $outputFolder
-        ZipPath = $zipPath
-        ReportPath = $reportPath
-        WarningCount = $warnings.Count
+    finally {
+        if (Test-Path -LiteralPath $outputFolder) {
+            Remove-Item -LiteralPath $outputFolder -Recurse -Force
+        }
     }
 }
 
@@ -1330,12 +1417,28 @@ if (-not $config.ContainsKey('Versions') -or @($config.Versions).Count -eq 0) {
 
 $config['Versions'] = @($config.Versions | ForEach-Object { Normalize-VersionConfig -VersionConfig $_ })
 
+if ($PromptForPack -and $Pack) {
+    throw 'Use either -Pack or -PromptForPack, not both.'
+}
+
+if ($PromptForVersion -and $Version) {
+    throw 'Use either -Version or -PromptForVersion, not both.'
+}
+
 if ($ListVersions) {
     foreach ($entry in @($config.Versions)) {
         $state = if ($entry.Enabled) { 'enabled' } else { 'disabled' }
         Write-Output "$($entry.Id)`t$state`tpack_format=$(Format-PackFormatValue -Value $entry.PackFormat)"
     }
     exit 0
+}
+
+if ($PromptForPack) {
+    $Pack = @(Read-RequestedPackNames -RepoRoot $repoRoot -Config $config)
+}
+
+if ($PromptForVersion) {
+    $Version = @(Read-RequestedVersions -Config $config)
 }
 
 $packDirectories = Get-PackDirectories -RepoRoot $repoRoot -Config $config -RequestedPackNames $Pack
@@ -1348,10 +1451,8 @@ if ($ListPacks) {
 }
 
 $buildRoot = Resolve-FullPath -BasePath $repoRoot -Path ([string]$config.BuildRoot)
-$zipRoot = Resolve-FullPath -BasePath $repoRoot -Path ([string]$config.ZipRoot)
-$reportRoot = Resolve-FullPath -BasePath $repoRoot -Path ([string]$config.ReportRoot)
 if ($Clean) {
-    foreach ($path in @($buildRoot, $zipRoot, $reportRoot)) {
+    foreach ($path in @(Get-TemporaryBuildRoot)) {
         if (Test-Path -LiteralPath $path) {
             Remove-Item -LiteralPath $path -Recurse -Force
         }

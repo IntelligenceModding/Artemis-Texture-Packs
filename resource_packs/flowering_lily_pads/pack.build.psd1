@@ -1,4 +1,13 @@
 ﻿@{
     MinVersion = '1.13'
-    BeforeVersion = '1.17'
+        FileRules = @(
+            @{
+                Path = 'textures/block/spore_blossom.png'
+                BeforeVersion = '1.17'
+            }
+            @{
+                Path = 'textures/block/spore_blossom_base.png'
+                BeforeVersion = '1.17'
+            }
+        )
 }

@@ -6,9 +6,9 @@ This repository now builds texture packs from folders under `resource_packs/`.
 
 ```text
 resource_packs/   source packs you edit
-scripts/          build, scaffold, and matrix-sync scripts
+scripts/          build, scaffold, and release-matrix maintenance scripts
 config/           builder config plus generated Minecraft release matrix
-build/            generated completed packs, zips, and reports
+build/            generated zip outputs grouped by pack
 cache/            cached Mojang asset catalogs and remembered route maps
 .github/          CI workflow
 ```
@@ -94,6 +94,8 @@ It also remembers the resolved output path of each dropped source file per pack 
 
 - `cache/vanilla-asset-catalogs/resolved-pack-routes/<pack>/<version>.json`
 
+`cache/` is disposable local build acceleration data. If you delete it, the next build recreates what it needs.
+
 Notes:
 
 - `pack.png` is never sorted into `assets/minecraft`; it stays at the resource-pack root.
@@ -164,11 +166,7 @@ Rules:
 
 The builder generates:
 
-- `build/completed/<pack>/<version>/`
-- `build/zips/<pack>/<pack>-<version>.zip`
-- `build/reports/<pack>/<version>.json`
-
-Each build report also records which source file resolved to which output path.
+- `build/<pack>/<pack>-<version>.zip`
 
 ## Full release matrix
 
@@ -201,9 +199,15 @@ This repo now includes shared IntelliJ run configurations under `.run/`.
 In IntelliJ, use the run-config dropdown at the top right and select:
 
 - `Build All Texture Packs`
+- `Build All Texture Packs For Version Range`
+- `Build Selected Texture Packs`
 - `Create New Texture Pack`
 
 `Build All Texture Packs` runs the full builder in the IntelliJ terminal.
+
+`Build All Texture Packs For Version Range` prompts for one version, an inclusive version range like `1.20.4..1.21.11`, or a comma-separated mix, then builds every pack for that selection.
+
+`Build Selected Texture Packs` uses the main build script, prompts for one or more pack names, and then builds only that selection.
 
 `Create New Texture Pack` starts the scaffold script and prompts for the pack name in the IntelliJ terminal.
 
@@ -228,7 +232,7 @@ You can also run it directly:
 powershell -ExecutionPolicy Bypass -File .\scripts\new-texture-pack.ps1 -Name stone_tools -MinVersion 1.13
 ```
 
-If you still want a Windows launcher outside IntelliJ, [Build All Texture Packs.cmd](/C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/Build%20All%20Texture%20Packs.cmd) runs the same build script.
+Use the PowerShell scripts directly or the shared IntelliJ run targets in `.run/`.
 
 Useful commands:
 
@@ -242,16 +246,32 @@ powershell -ExecutionPolicy Bypass -File .\scripts\build-texture-packs.ps1 -List
 # build one pack
 powershell -ExecutionPolicy Bypass -File .\scripts\build-texture-packs.ps1 -Pack alternative_birch_leaves
 
+# build all packs for one version
+powershell -ExecutionPolicy Bypass -File .\scripts\build-texture-packs.ps1 -Version 1.21.11
+
 # build one pack for selected versions
 powershell -ExecutionPolicy Bypass -Command "& '.\scripts\build-texture-packs.ps1' -Pack alternative_birch_leaves -Version @('1.13','1.20.4','26.2')"
 
-# remove generated output and rebuild
+# build all packs for an inclusive version range
+powershell -ExecutionPolicy Bypass -Command "& '.\scripts\build-texture-packs.ps1' -Version @('1.20.4','1.20.5','1.20.6')"
+
+# clear only temporary staging data; existing build zips stay in place
 powershell -ExecutionPolicy Bypass -File .\scripts\build-texture-packs.ps1 -Clean
 ```
+
+Build ZIP retention:
+
+- existing `build/<pack>/<pack>-<version>.zip` files stay in place across later builds
+- rebuilding the exact same pack/version replaces only that matching ZIP
+- `-Clean` clears temporary staging under the system temp directory and does not delete retained ZIPs
 
 ## GitHub Actions
 
 The workflow at [.github/workflows/build-packs.yml](/C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/.github/workflows/build-packs.yml) builds packs automatically when pack sources, config, or scripts change.
+
+## Release matrix maintenance
+
+`scripts/sync-minecraft-release-matrix.ps1` is not part of normal local builds. Keep it for the rare case where Mojang adds new release versions and you want to regenerate [config/minecraft-release-version-matrix.psd1](/C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/config/minecraft-release-version-matrix.psd1) from official metadata.
 
 ## Current source pack
 
