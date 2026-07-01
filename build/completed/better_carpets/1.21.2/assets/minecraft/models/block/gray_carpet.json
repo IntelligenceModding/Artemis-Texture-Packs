@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/overhanging_carpet",
+  "textures": {
+    "wool": "minecraft:block/gray_wool",
+    "side": "minecraft:block/gray_carpet_side"
+  }
+}

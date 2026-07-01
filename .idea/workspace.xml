@@ -4,23 +4,666 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_nether_portal_color assets">
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/assets/minecraft/textures/particle/nether_portal_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/drop/particles/portal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/drop/textures/block/nether_portal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/drop/textures/block/nether_portal.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource_packs/alternative_nether_portal_color/pack.png" afterDir="false" />
+    <list default="true" id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_nether_portal_color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-texture-packs.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/new-texture-pack.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/new-texture-pack.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.14/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.15/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.16/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.17/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.18/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.19/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20.6/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.20/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.10/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.11/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.3/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.4/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.5/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.6/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.7/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.8/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21.9/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/1.21/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.1/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/particles/portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/block/nether_portal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/block/nether_portal.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/assets/minecraft/textures/particle/nether_portal_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/completed/alternative_nether_portal_color/26.2/pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.14.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.14.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.14.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.14.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.15.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.15.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.17.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.18.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.18.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.19.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.19.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.19.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.19.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/1.21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/26.1.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/26.1.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/26.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/alternative_nether_portal_color/26.2.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +678,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DoomedArtemis"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/IntelligenceModding/Artemis-Texture-Packs.git&quot;,
@@ -45,25 +694,45 @@
     <commands />
     <urls />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3FtiG60L9dGBDgGEHiMassUk9Gv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Shell Script.Build Selected Texture Packs.executor": "Run",
     "Shell Script.Create New Texture Pack.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/resource_packs/alternative_nether_portal_color/drop/textures/block",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/grego/IdeaProjects/Artemis-Texture-Packs/resource_packs/better_carpets/assets/minecraft/textures/block",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\alternative_nether_portal_color\drop\textures\block" />
-      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\alternative_nether_portal_color\drop\particles" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\better_carpets\assets\minecraft\textures\block" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\better_carpets\assets\minecraft\models\block" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\better_carpets\drop\models\block" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\better_carpets" />
+      <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\better_carpets\drop\textures\block" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\resource_packs\alternative_nether_portal_color\assets\minecraft\textures\particle" />
@@ -73,7 +742,14 @@
       <recent name="C:\Users\grego\IdeaProjects\Artemis-Texture-Packs\amethyst_to_jade" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Build Selected Texture Packs" />
+  <component name="RunManager" selected="Shell Script.Build Selected Texture Packs">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Artemis-Texture-Packs" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="general and birch specific images">
       <option name="closed" value="true" />
@@ -99,13 +775,36 @@
       <option name="project" value="LOCAL" />
       <updated>1782858636232</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added alternative_nether_portal_color">
+      <option name="closed" value="true" />
+      <created>1782860534142</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782860534142</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f2353d2-b774-41e6-815b-2b0edcc74323" name="Changes" comment="Added alternative_nether_portal_color" />
+      <created>1782900668852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782900668852</updated>
+      <workItem from="1782900671063" duration="5717000" />
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.psd1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="general and birch specific images" />
     <MESSAGE value="Added amythyst_to_jade assets" />
     <MESSAGE value="Added alternative_nether_portal_color assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added alternative_nether_portal_color assets" />
+    <MESSAGE value="Added alternative_nether_portal_color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alternative_nether_portal_color" />
   </component>
 </project>

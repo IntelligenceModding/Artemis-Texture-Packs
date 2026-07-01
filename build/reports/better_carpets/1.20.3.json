@@ -1,0 +1,237 @@
+﻿{
+    "packName":  "better_carpets",
+    "versionId":  "1.20.3",
+    "status":  "success",
+    "outputFolder":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\completed\\better_carpets\\1.20.3",
+    "zipPath":  "C:\\Users\\grego\\IdeaProjects\\Artemis-Texture-Packs\\build\\zips\\better_carpets\\better_carpets-1.20.3.zip",
+    "warnings":  [
+
+                 ],
+    "resolvedInputs":  [
+                           {
+                               "source":  "drop/models/block/black_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/black_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/blue_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/blue_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/brown_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/brown_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/cyan_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/cyan_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/gray_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/gray_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/green_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/green_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/light_blue_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/light_blue_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/light_gray_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/light_gray_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/lime_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/lime_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/magenta_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/magenta_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/moss_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/moss_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/orange_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/orange_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/pink_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/pink_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/purple_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/purple_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/red_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/red_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/white_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/white_carpet.json"
+                           },
+                           {
+                               "source":  "drop/models/block/yellow_carpet.json",
+                               "kind":  "auto",
+                               "output":  "assets/minecraft/models/block/yellow_carpet.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/overhanging_carpet.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/overhanging_carpet.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/models/block/overhanging_moss_carpet.json",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/models/block/overhanging_moss_carpet.json"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/black_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/black_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/blue_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/blue_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/brown_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/brown_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/cyan_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/cyan_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/gray_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/gray_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/green_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/green_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/light_blue_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/light_blue_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/light_gray_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/light_gray_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/lime_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/lime_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/magenta_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/magenta_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/moss_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/moss_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/orange_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/orange_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/pink_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/pink_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/purple_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/purple_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/red_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/red_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/white_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/white_carpet_side.png"
+                           },
+                           {
+                               "source":  "assets/minecraft/textures/block/yellow_carpet_side.png",
+                               "kind":  "direct",
+                               "output":  "assets/minecraft/textures/block/yellow_carpet_side.png"
+                           },
+                           {
+                               "source":  "pack.png",
+                               "kind":  "root",
+                               "output":  "pack.png"
+                           }
+                       ],
+    "files":  [
+                  "assets/minecraft/models/block/black_carpet.json",
+                  "assets/minecraft/models/block/blue_carpet.json",
+                  "assets/minecraft/models/block/brown_carpet.json",
+                  "assets/minecraft/models/block/cyan_carpet.json",
+                  "assets/minecraft/models/block/gray_carpet.json",
+                  "assets/minecraft/models/block/green_carpet.json",
+                  "assets/minecraft/models/block/light_blue_carpet.json",
+                  "assets/minecraft/models/block/light_gray_carpet.json",
+                  "assets/minecraft/models/block/lime_carpet.json",
+                  "assets/minecraft/models/block/magenta_carpet.json",
+                  "assets/minecraft/models/block/moss_carpet.json",
+                  "assets/minecraft/models/block/orange_carpet.json",
+                  "assets/minecraft/models/block/overhanging_carpet.json",
+                  "assets/minecraft/models/block/overhanging_moss_carpet.json",
+                  "assets/minecraft/models/block/pink_carpet.json",
+                  "assets/minecraft/models/block/purple_carpet.json",
+                  "assets/minecraft/models/block/red_carpet.json",
+                  "assets/minecraft/models/block/white_carpet.json",
+                  "assets/minecraft/models/block/yellow_carpet.json",
+                  "assets/minecraft/textures/block/black_carpet_side.png",
+                  "assets/minecraft/textures/block/blue_carpet_side.png",
+                  "assets/minecraft/textures/block/brown_carpet_side.png",
+                  "assets/minecraft/textures/block/cyan_carpet_side.png",
+                  "assets/minecraft/textures/block/gray_carpet_side.png",
+                  "assets/minecraft/textures/block/green_carpet_side.png",
+                  "assets/minecraft/textures/block/light_blue_carpet_side.png",
+                  "assets/minecraft/textures/block/light_gray_carpet_side.png",
+                  "assets/minecraft/textures/block/lime_carpet_side.png",
+                  "assets/minecraft/textures/block/magenta_carpet_side.png",
+                  "assets/minecraft/textures/block/moss_carpet_side.png",
+                  "assets/minecraft/textures/block/orange_carpet_side.png",
+                  "assets/minecraft/textures/block/pink_carpet_side.png",
+                  "assets/minecraft/textures/block/purple_carpet_side.png",
+                  "assets/minecraft/textures/block/red_carpet_side.png",
+                  "assets/minecraft/textures/block/white_carpet_side.png",
+                  "assets/minecraft/textures/block/yellow_carpet_side.png",
+                  "pack.mcmeta",
+                  "pack.png"
+              ]
+}
